@@ -17,7 +17,6 @@ MOD_CREATOR := Libretro + ModMyClassic
 MOD_CATEGORY := RetroArch
 GIT_COMMIT := $(shell echo "`git rev-parse --short HEAD``git diff-index --quiet HEAD -- || echo '-dirty'`")
 
-# General Shared Variables ############
 TARGET := retroarch
 
 # Libretro Defines ####################
@@ -54,6 +53,3 @@ clean:
 	rm -f retroarch
 	rm -f $(CLASSIC_MODS_VER).hmod
 	rm -f version.all version.dtd
-	mv -f version_BACKUP.all version.all || echo "Backup Doesn't Exist - Ignoring..."
-	mv -f version_BACKUP.dtd version.dtd || echo "Backup Doesn't Exist - Ignoring..."
-	rm -f *_BACKUP*
