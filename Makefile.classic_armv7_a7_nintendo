@@ -78,15 +78,6 @@ retroarch:
 	@echo "** BUILT CLASSIC_MODS HAKCHI - $(CLASSIC_MODS_VER) HMOD PACKAGE **"
 	rm -fr /tmp/$(HAKCHI_DIR) #clean up tmp
 
-	#COMMODORE 64 MINI BUILD (WIP)
-
-	#Clean down dirty files
-	rm -f version.all version.dtd
-	mv version_BACKUP.all version.all && mv version_BACKUP.dtd version.dtd
-	@echo "*********************************************************************"
-	@echo "*** Classic ARM7 Cortex A7 build and packages built successfully! ***"
-	@echo "****************** Winner, Winner, Chicken Dinner! ******************"
-	@echo "*********************************************************************"
 clean:
 	rm -rf obj-unix
 	rm -f *.d
